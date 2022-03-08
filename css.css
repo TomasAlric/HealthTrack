@@ -29,7 +29,7 @@ header {
 }
 
 main {
-  height: 85vh;
+  min-height: 5vh;
 }
 
 footer {
