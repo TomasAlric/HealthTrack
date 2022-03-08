@@ -16,17 +16,19 @@
     <title>Health tracker</title>
 </head>
 
-<body class="d-flex flex-column">
-    <header class="p-2 mb-3"
-        style="background-image:url('./imgs/Ellipse\ 16.png');background-repeat: no-repeat;Width:100%;height:100px;">
+<body class="d-flex flex-column justify-content-between">
+    <header class="p-2 mb-3 d-flex justify-content-between align-items-center">
         <img src="./imgs/logo.png" class="logo" style="width: 63px;height: 62px;">
+        <a href="./index.html">
+            <img src="./imgs/sair.png" alt="">
+        </a>
     </header>
     <main class="d-flex flex-column " style="height:80vh;width:100%;">
         <h1 class="text-center" style="color:black;font-weight: 500;">Aperte o play para marcar seus passos
         </h1>
         <div class="d-flex justify-content-center align-items-center" style="width:100%;height:80%;">
             <div class="d-flex flex-column justify-content-start align-items-start" style="height:100%;">
-                <img class="mt-5" src="./imgs/playicon.png">
+                <img class="mt-5" src="./imgs/playicon.png" id="playicon">
             </div>
             <div class="d-flex flex-column justify-content-center align-items-center" style="width:20%;height:90vh;">
                 <img class="p-2 mb-2" src="./imgs/foot.png" alt="">
@@ -56,5 +58,11 @@
     </footer>
 
 </body>
+
+<script>
+    document.getElementById("playicon").addEventListener('click', () => {
+        alert("Contagem iniciada")
+    })
+</script>
 
 </html>

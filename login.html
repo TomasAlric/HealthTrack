@@ -17,8 +17,8 @@
 </head>
 
 <body class="d-flex flex-column">
-    <header class=""
-        style="background-image:url('./imgs/Ellipse 14.png');width:100%;background-size:cover;background-repeat: no-repeat;height:35%;">
+    <header>
+
         <h5 class="mt-5 ms-3" style="font-weight:300;font-size:22px;">Bem vindo,</h5>
         <h1 class="ms-3" style="font-size:34px;">Conecte - se!</h1>
     </header>
@@ -57,8 +57,8 @@
                     <img src="./imgs/instagram-icon.png" alt="icone instagram" class="icon">
                     <img src="./imgs/google-icon.png" alt="icone google">
                 </div>
-                <a class="btn btn-green d-flex align-items-center justify-content-center mt-3"
-                    href="./register.html">Entrar</a>
+                <a class="btn btn-green d-flex align-items-center justify-content-center mt-3" href="./register.html"
+                    id="signIn">Entrar</a>
                 <div class="d-flex align-items-center justify-content-center mt-2">
 
                     <a href="./signUp.html" style="color:var(--gray);"
@@ -77,5 +77,10 @@
 
 
 </body>
+<script>
+    document.getElementById("signIn").addEventListener('click', () => {
+        alert("Usuário logado com sucesso")
+    })
+</script>
 
 </html>

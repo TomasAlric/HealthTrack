@@ -17,8 +17,7 @@
 </head>
 
 <body class="d-flex flex-column">
-    <header class="d-flex flex-column align-items-end"
-        style="background-image:url('./imgs/Ellipse 15.png');width:100%;background-size:cover;background-repeat: no-repeat;height:35%;">
+    <header class="d-flex flex-column align-items-end">
         <h5 class="mt-5 me-3" style="font-weight:300;font-size:22px;">Seja bem vindo,</h5>
         <h1 class="me-3" style="font-size:34px;">Cadastre - se!</h1>
     </header>
@@ -79,8 +78,8 @@
                     <img src="./imgs/google-icon.png" alt="icone google">
                 </div>
 
-                <a class="btn btn-green d-flex align-items-center justify-content-center mt-3"
-                    href="./register.html">Cadastre-se</a>
+                <a class="btn btn-green d-flex align-items-center justify-content-center mt-3" href="./register.html"
+                    id="signUp">Cadastre-se</a>
                 <a href="./login.html" style="color:var(--gray);"
                     class="ms-3 mt-3 d-flex align-items-center justify-content-center " style="width:auto;padding:5px;">
                     Já tenho conta
@@ -96,5 +95,10 @@
 
 
 </body>
+<script>
+    document.getElementById("signUp").addEventListener('click', () => {
+        alert("Usuário cadastrado com sucesso")
+    })
+</script>
 
 </html>

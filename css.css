@@ -1,3 +1,64 @@
+:root {
+  --green100: #1b4332;
+  --green50: #278720;
+  --red50: #d35443;
+  --gray: #8e8585;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+body {
+  height: 100vh;
+}
+
+a {
+  color: none;
+  text-decoration: none;
+  font-style: normal;
+}
+
+header {
+  width: 100%;
+  min-height: 3rem;
+  background-color: var(--red50);
+}
+
+main {
+  height: 85vh;
+}
+
+footer {
+  width: 100%;
+  min-height: 3rem;
+  background-color: var(--green100);
+}
+
+.btn {
+  color: white;
+  width: 279px;
+  height: 50px;
+  border-radius: 4px;
+  font-size: 21px;
+
+  align-items: center;
+}
+.btn-green {
+  background-color: var(--green100);
+}
+.btn-red {
+  background-color: var(--red50);
+}
+
+.icon {
+  width: 35px;
+  height: 35px;
+}
+
 @media only screen and (max-width: 375px) {
   :root {
     --green100: #1b4332;
